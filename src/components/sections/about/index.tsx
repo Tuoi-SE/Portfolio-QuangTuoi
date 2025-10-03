@@ -8,35 +8,40 @@ import { FaGraduationCap } from "react-icons/fa6";
 import Divider from "components/sections/divider";
 import { APP_DATA } from "helpers/data";
 import SocialMedia from "components/sections/social.media";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+    const { t, i18n } = useTranslation();
     return (
         <>
             <Row>
                 <Col md={6} xs={12}>
-                    <h3 className="text-center mb-md-5 mb-2">Know Who <span className="brand-red">I'M</span> </h3>
+                    {i18n.resolvedLanguage === "en" ? <>
+                        <h3 className="text-center mb-md-5 mb-2">Know Who <span className="brand-red">I'M</span> </h3>
+                    </>
+                        :
+                        <>
+                            <h3 className="text-center mb-md-5 mb-2">Để biết <span className="brand-red">Tôi</span> là ai</h3>
+                        </>
+                    }
                     <div>
                         <div>
-                            <p> Hi Everyone, I am Quang Tuoi from Ho Chi Minh city, VietNam.</p>
-
-                            <p> I am currently employed as a a freelance dev (start-up).</p>
-
-                            <p> I have completed Bachelor's degree in Software Engineer at Hanoi University of Science and Technology (HUST).</p>
+                            <p>{t("aboutMe.intro1")}</p>
+                            <p>{t("aboutMe.intro2")}</p>
+                            <p>{t("aboutMe.intro3")}</p>
                         </div>
                     </div>
                     <div>
-                        <p>Apart from coding, some other activities that I love to do!
-
-                        </p>
+                        <p>{t("aboutMe.activitiesTitle")}</p>
                         <ul>
-                            <li>Playing Games</li>
-                            <li>Writing Tech Blogs</li>
-                            <li>Travelling</li>
+                            <li>{t("aboutMe.activity1")}</li>
+                            <li>{t("aboutMe.activity2")}</li>
+                            <li>{t("aboutMe.activity3")}</li>
                         </ul>
                     </div>
                     <div>
-                        <p className="text-center brand-red">"Pursuing Your Dreams Is How You Become Homeless ~.~"</p>
-                        <p className="text-center brand-red">--Jimmy O Yang</p>
+                        <p className="text-center brand-red">{t("aboutMe.quote")}</p>
+                        <p className="text-center brand-red">{t("aboutMe.quoteAuthor")}</p>
                     </div>
                 </Col >
                 <Col md={6} xs={12} className="d-flex align-items-center justify-content-center">
@@ -59,21 +64,21 @@ const About = () => {
                 </Col>
                 <Col md={6} xs={12} className="mt-md-5 mt-3">
                     <div className="d-flex flex-column align-items-center gap-3">
-                        <div><h4 className="text-center brand-red">Education</h4></div>
+                        <div><h4 className="text-center brand-red">{t("aboutEducation.title")}</h4></div>
                         <div >
                             <GlowCard identifier={`experience-5`}>
                                 <div className="p-3 relative">
                                     <div className="experience-container">
                                         <div className="duration-text">
-                                            <p>20xx-20xx</p>
+                                            <p>{t("aboutEducation.year")}</p>
                                         </div>
                                         <div className="details">
                                             <div className="icon">
                                                 <FaGraduationCap size={36} />
                                             </div>
                                             <div className="info">
-                                                <p className="title">Softwaren Engineer</p>
-                                                <p className="company">Hanoi University of Science and Technology (HUST)</p>
+                                                <p className="title">{t("aboutEducation.major")}</p>
+                                                <p className="company">{t("aboutEducation.nameUniversity")}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -87,12 +92,12 @@ const About = () => {
             <Divider />
             <Row>
                 <Col md={6} xs={12} className=" mt-md-5 mt-3">
-                    <h3 className="mb-md-5 mb-2">FIND ME ON </h3>
+                    <h3 className="mb-md-5 mb-2">{t("findMeOn.title")} </h3>
                     <SocialMedia
-                        youtube={APP_DATA.YOUTUBE_URL}
+                        github={APP_DATA.GITHUB_URL}
                         facebook={APP_DATA.FACEBOOK_URL}
-                        tiktok={APP_DATA.TIKTOK_URL}
-                        udemy={APP_DATA.UDEMY_URL}
+                        linked={APP_DATA.LINKED_URL}
+                        mail={APP_DATA.MAIL_URL}
                     />
                 </Col >
                 <Col md={6} xs={12} className="d-flex flex-column align-items-center justify-content-center">
@@ -102,7 +107,7 @@ const About = () => {
                         // https://github.com/airbnb/lottie-web/issues/2070
                         animationPath={JSON.parse(CONTACT_LOTTIE)}
                     />
-                    <h4 className="text-center">Contact me</h4>
+                    <h4 className="text-center">{t("contact.title")}</h4>
                 </Col>
             </Row>
             <div className="mb-5"></div>

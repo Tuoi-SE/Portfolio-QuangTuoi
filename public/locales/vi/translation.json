@@ -24,5 +24,28 @@
     },
     "skill": {
         "title": "Kỹ năng"
+    },
+    "findMeOn": {
+        "title": "TÌM TÔI Ở"
+    },
+    "contact": {
+        "title": "Liên hệ tôi"
+    },
+    "aboutEducation": {
+        "title": "Học tại",
+        "year": "2022-2026",
+        "major": "Kỹ thuật phần mềm",
+        "nameUniversity": "Trường Đại học Văn Lang (VLU)"
+    },
+    "aboutMe": {
+        "intro1": "Xin chào mọi người, tôi là Quang Tươi đến từ Thành phố Hồ Chí Minh, Việt Nam.",
+        "intro2": "Hiện tại tôi đang sinh viên và có thực tập tại một số cơ sở.",
+        "intro3": "Tôi đã hoàn thành chương trình Cử nhân Kỹ sư Phần mềm tại Đại học Văn Lang (VLU).",
+        "activitiesTitle": "Ngoài lập trình, tôi còn yêu thích một số hoạt động khác!",
+        "activity1": "Chơi game",
+        "activity2": "Viết blog công nghệ",
+        "activity3": "Cầu lông",
+        "quote": "\"Theo đuổi ước mơ là con đường dẫn bạn tới cảnh vô gia cư ~.~\"",
+        "quoteAuthor": "--Jimmy O Yang"
     }
 }

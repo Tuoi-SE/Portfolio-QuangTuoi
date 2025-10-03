@@ -33,7 +33,7 @@ const HeroRight = () => {
                         <span>{"', '"}</span>
                         <span >NextJS</span>
                         <span>{"', '"}</span>
-                        <span >Java Spring</span>
+                        <span >Java Spring Basic</span>
                         <span>{"', '"}</span>
                         <span >NestJS</span>
                         <span>{"', '"}</span>

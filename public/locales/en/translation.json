@@ -24,5 +24,28 @@
     },
     "skill": {
         "title": "Skills"
+    },
+    "findMeOn": {
+        "title": "FIND ME ON"
+    },
+    "contact": {
+        "title": "Contact me"
+    },
+    "aboutEducation": {
+        "title": "Education",
+        "year": "2022-2026",
+        "major": "Softwaren Engineer",
+        "nameUniversity": "Van Lang University (VLU)"
+    },
+    "aboutMe": {
+        "intro1": "Hello everyone, I am Quang Tuoi from Ho Chi Minh City, Vietnam.",
+        "intro2": "I am currently a student and also doing internships at some companies.",
+        "intro3": "I have completed a Bachelor's degree in Software Engineering at Van Lang University (VLU).",
+        "activitiesTitle": "Apart from coding, I also enjoy several other activities!",
+        "activity1": "Playing games",
+        "activity2": "Writing tech blogs",
+        "activity3": "Playing badminton",
+        "quote": "\"Pursuing your dreams is the path that may lead you to being homeless ~.~\"",
+        "quoteAuthor": "--Jimmy O Yang"
     }
 }
